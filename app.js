@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require('mongoose');
 const authRouter = require('./routes/auth');
 
-mongoose.connect('mongodb://localhost:27017/mydatabase', {
+mongoose.connect('mongodb://localhost:27017/kreasindo', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
