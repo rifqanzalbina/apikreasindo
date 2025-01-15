@@ -1,19 +1,21 @@
 {
-  "name": "apikreasindo",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "api-jt",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start-dev": "nodemon .bin/www",
+    "start": "node ./bin/www"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.10",
     "express": "^4.21.2",
+    "http-errors": "~1.6.3",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.9.5"
+    "mongoose": "^8.9.5",
+    "mongoose-unique-validator": "^5.0.0",
+    "morgan": "~1.9.1"
   }
 }
